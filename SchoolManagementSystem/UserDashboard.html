@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&family=Sarabun&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/UserDashBoard.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Student Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Student Dashboard</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="UserDashboard.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link"  href="AddUser.html">Add Student</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link"  href="Quiz.html">Take Test</a>
+                        </li> 
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="logout">Log Out</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col1">
+                <div class="box" id="box1">
+                    <i class="fa fa-calendar fa-4x icons" aria-hidden="true"></i>
+                   <h2 class="cardhead">Course Schedule</h2>
+                   <p class="cardtext">Algorithms and Data Structures <br> Day 3 at 9:45am
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col2">
+                <div class="box" id="box2">
+                    <i class="fa fa-paperclip fa-4x icons" id="paperclip" aria-hidden="true"></i>
+                   <h2 class="cardhead">Materials </h2>
+                   <p class="cardtext">The list of subjects and materials
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col3">
+                <div class="box" id="box3">
+                    <i class="fa fa-star-half-o fa-4x icons" id="star" aria-hidden="true"></i>
+                   <h2 class="cardhead">Grades</h2>
+                   <p class="cardtext">Check Your Grades
+                   </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col4">
+                <div class="box" id="box4">
+                    <i class="fa fa-envelope fa-4x icons" style="color: greenyellow;" aria-hidden="true"></i>
+                   <h2 class="cardhead">Messages</h2>
+                   <p class="cardtext">Check Your Inbox
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col5">
+                <div class="box" id="box5">
+                    <i class="fa fa-money fa-4x icons" style="color: skyblue;" aria-hidden="true"></i>
+                   <h2 class="cardhead">Payments</h2>
+                   <p class="cardtext">Payments Overdue
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col6">
+                <div class="box" id="box6">
+                    <i class="fa fa-balance-scale fa-4x icons" style="color: orange;" aria-hidden="true"></i>
+                   <h2 class="cardhead">Petitions and Decisions</h2>
+                   <p class="cardtext">Apply For A Petition
+                   </p>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col7">
+                <div class="box" id="box7">
+                    <i class="fa fa-newspaper-o fa-4x icons" style="color: #999;" aria-hidden="true"></i>
+                   <h2 class="cardhead">News</h2>
+                   <p class="cardtext">Check Announcements
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col8">
+                <div class="box" id="box8">
+                    <i class="fa fa-clock-o fa-4x icons" style="color: rgb(80, 80, 163)" aria-hidden="true"></i>
+                   <h2 class="cardhead">Career Counselling</h2>
+                   <p class="cardtext">The service is only for selected students
+                   </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col9">
+                <div class="box" id="box9">
+                    <i class="fa fa-pagelines fa-4x icons" style="color: green;" aria-hidden="true"></i>
+                   <h2 class="cardhead">Feedback</h2>
+                   <p class="cardtext">Give Us Your Feedback
+                   </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/UserDashBoard.js"></script>
+</body>
+
+</html>

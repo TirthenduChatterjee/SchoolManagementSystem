@@ -1,0 +1,70 @@
+/* .home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+} */
+
+
+.bgi{
+    background-color: #1d2630;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    transition: all 0.5s ease-out;
+} */
+
+/* .firstrow{
+    height: 200px;
+    border: 2px solid black;
+} */
+.secondrow{
+    /* border: 2px solid black; */
+
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* #mainrow{
+    justify-content: center;
+    align-items: center
+} */
+
+
+.box{
+    width: 270px;
+    height: 350px;
+    margin: 20px auto;
+    border-radius: 0%;
+    transition: all 0.8s ease;
+    background: url("https://img.freepik.com/premium-photo/top-view-abstract-paper-texture-background_225709-2718.jpg?w=2000");
+    /* background: linear-gradient(#1D267D,rgb(255, 255, 255) ); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: 1px solid #707070;
+    filter: brightness(100%);
+}
+.icon{
+    width: 200px;
+    height: 200px;
+    margin: 45px 0px 0px 35px;
+    mix-blend-mode: multiply;
+}
+.box:hover{
+    /* background: linear-gradient(#1D267D,white); */
+    transform: scale(1.07);
+    color: #fff;
+}
+
+#address{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
